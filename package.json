@@ -3,6 +3,25 @@
   "version": "0.0.1",
   "main": "./src/main.js",
   "dependencies": {
+    "electron-prebuilt": "^1.1.2",
+    "gulp": "^3.9.1",
     "express": "^4.13.4"
-  }
+  },
+  "description": "chicken-server",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadyyang/chicken-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadyyang/chicken-server/issues"
+  },
+  "homepage": "https://github.com/jadyyang/chicken-server#readme"
 }
