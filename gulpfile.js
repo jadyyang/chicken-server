@@ -7,7 +7,7 @@ const childProcess = require("child_process");
 const electron = require("electron-prebuilt");
 
 gulp.task("run", () => {
-    childProcess.spawn(electron, ["", "./app"], {
+    childProcess.spawn(electron, ["--debug=5858", "./app"], {
         stdio: "inherit"
     });
 });

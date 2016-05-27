@@ -11,7 +11,14 @@ class Server {
      * @param rootPath
      */
     constructor(config) {
-        this._config = config;
+        this._config = this._fillConfig(config);
+    }
+    
+    /**
+     * @param config 
+     */
+    _fillConfig(config) {
+        // todo 
     }
 
     /**
