@@ -3,9 +3,9 @@
  */
 
 const electron = require("electron");
-const path = require("path");
 
-const Server = require("./server");
+// fixme 测试服务器样例
+const testServerA = require("test/servera");
 
 const {app, BrowserWindow} = electron;
 
@@ -21,18 +21,12 @@ function createWindow() {
 
     win.WebContents.openDevTools();
 
-    createServer();
+    // fixme 启动测试服务器
+    testServerA.start();
 
     win.on("closed", () => {
         win = null;
     });
-}
-
-var server;
-
-function createServer() {
-    server = new Server(path.resolve("../test/site1"));
-    server.start();
 }
 
 app.on("ready", createWindow);

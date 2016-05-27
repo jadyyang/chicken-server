@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "./src/main.js",
   "dependencies": {
-    "electron-prebuilt": "^1.1.2",
+    "electron-prebuilt": "^1.2.0",
     "gulp": "^3.9.1",
     "express": "^4.13.4"
   },

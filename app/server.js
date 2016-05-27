@@ -10,8 +10,15 @@ class Server {
      * 构造函数
      * @param rootPath
      */
-    constructor(rootPath) {
-        this._rootPath = rootPath;
+    constructor(config) {
+        this._config = this._fillConfig(config);
+    }
+    
+    /**
+     * @param config 
+     */
+    _fillConfig(config) {
+        // todo 
     }
 
     /**
@@ -34,7 +41,7 @@ class Server {
             let app = express();
 
             // 设置静态资源路径地址
-            app.use(express.static(this._rootPath));
+            app.use(express.static(this._config.root));
 
             this.__app = app;
         }
