@@ -13,8 +13,8 @@ let server;
  * @type {{}}
  */
 let config = {
-    host:       "las.100credit.com",
-    root:       path.resolve("servera")
+    name:       "localhost",
+    root:       path.resolve(__dirname, "./servera")
 };
 
 exports.start = function() {

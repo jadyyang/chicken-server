@@ -5,7 +5,7 @@
 const electron = require("electron");
 
 // fixme 测试服务器样例
-const testServerA = require("test/servera");
+const testServerA = require("./test/servera");
 
 const {app, BrowserWindow} = electron;
 
@@ -19,7 +19,7 @@ function createWindow() {
 
     win.loadURL(`file://${__dirname}/index.html`);
 
-    win.WebContents.openDevTools();
+    win.webContents.openDevTools();
 
     // fixme 启动测试服务器
     testServerA.start();
